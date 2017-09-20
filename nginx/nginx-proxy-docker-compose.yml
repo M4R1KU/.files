@@ -1,0 +1,17 @@
+version: "2"
+  services:
+    nginx_proxy:
+      image: nginx:latest
+      volumes:
+        - "./etc/nginx:/etc/nginx/conf.d"
+        - "./www/letsencrypt:/var/www/letsencrypt"
+        - "/etc/letsencrypt:/etc/letsencrypt"
+      ports:
+        - "443:443"
+        - "80:80"
+      networks:
+        - nginx_proxy_network
+  networks:
+    nginx_proxy_network:
+      external:
+        name: nginx_proxy_network
