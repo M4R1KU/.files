@@ -19,3 +19,7 @@ My list of tools which I need to have installed on my dev machine.
 
 ## Tools
 * [Insomnia REST](http://insomnia.rest)
+
+## UI
+* [Materia Theme](https://github.com/nana-4/materia-theme)
+* and/or [Paper Theme](https://snwh.org/paper)
